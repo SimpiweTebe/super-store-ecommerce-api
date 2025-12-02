@@ -9,7 +9,7 @@ const baseURL = 'https://github.com/SimpiweTebe/super-store-ecommerce-api/blob/m
 
 export const products = [
   {
-    id: 1,
+    id: '1',
     brand: `Levis Strauss`,
     name: '501 Jean',
     price: 999.00,
@@ -26,7 +26,7 @@ export const products = [
     description: `Levi's 501 men's jeans are the iconic original straight-leg denim with a signature button fly, known for their durability and timeless style that conforms to your shape over time. They are available from various online retailers and come in several fit variations besides the classic original.`
   },
   {
-    id: 2,
+    id: '2',
     brand: `Nike`,
     name: 'Jordan XDR',
     price: 2799.99,
@@ -44,7 +44,7 @@ export const products = [
     description: `Extra Durable Rubber, a specific, harder rubber compound used in the outsole of some Nike and Jordan Brand athletic shoes, designed specifically for enhanced durability on outdoor courts.`
   },
   {
-    id: 3,
+    id: '3',
     brand: `Polo Inc.`,
     name: 'Zipped jacket',
     price: 599.00,
