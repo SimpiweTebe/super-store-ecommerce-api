@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Optional: Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.DS_Store
+
+# Optional: Environment variables
+.env
+.env.local
+
+# Optional: Testing
+/coverage
+/.nyc_output
+
+# Optional: Build artifacts
+/dist
+/build
+/out
