@@ -25,7 +25,7 @@ const schema = buildSchema(`
     # Get a specific product by ID
     product(id: ID!): Product
     # Search products by name or brand
-    searchBooks(query: String!): [Product!]!
+    searchProducts(query: String!): [Product!]!
   }
 
   # Input type for adding/updating products
@@ -81,15 +81,15 @@ const root = {
     const itemIndex = products.findIndex(book => book.id === id);
     if (itemIndex === -1) return null;
 
-    const updatedBook = {
+    const updatedProduct = {
       ...products[itemIndex],
       ...input
     }
-    products[itemIndex] = updatedBook;
-    return updatedBook;
+    products[itemIndex] = updatedProduct;
+    return updatedProduct;
   },
 
-  deleteBook: ({ id }) => {
+  deleteProduct: ({ id }) => {
     const itemIndex = products.findIndex(book => book.id === id);
     if (itemIndex === -1) return false;
 
